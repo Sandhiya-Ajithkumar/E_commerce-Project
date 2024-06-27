@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-27T16:02:07 IST" name="Suite" finished-at="2024-06-27T16:02:29 IST" duration-ms="22198">
+    <groups>
+    </groups>
+    <test started-at="2024-06-27T16:02:07 IST" name="Test" finished-at="2024-06-27T16:02:29 IST" duration-ms="22198">
+      <class name="tests.SubmitOrderTest">
+        <test-method is-config="true" signature="landingApplication()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:07 IST" name="landingApplication" finished-at="2024-06-27T16:02:11 IST" duration-ms="4183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:11 IST" name="submitOrder" data-provider="getData" finished-at="2024-06-27T16:02:15 IST" duration-ms="3456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Sandhiya@26, email=sandhiyashankar24@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:15 IST" name="tearDown" finished-at="2024-06-27T16:02:15 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="landingApplication()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:15 IST" name="landingApplication" finished-at="2024-06-27T16:02:17 IST" duration-ms="2252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:17 IST" name="submitOrder" data-provider="getData" finished-at="2024-06-27T16:02:20 IST" duration-ms="3433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Sandhiya@24, email=sandhiyausha26@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:20 IST" name="tearDown" finished-at="2024-06-27T16:02:21 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="landingApplication()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:21 IST" name="landingApplication" finished-at="2024-06-27T16:02:24 IST" duration-ms="3728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:24 IST" name="orderHistoryTest" finished-at="2024-06-27T16:02:25 IST" depends-on-methods="tests.SubmitOrderTest.submitOrder" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SubmitOrderTest@3e78b6a5]" started-at="2024-06-27T16:02:25 IST" name="tearDown" finished-at="2024-06-27T16:02:26 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SubmitOrderTest -->
+      <class name="tests.errorValidationTest">
+        <test-method is-config="true" signature="landingApplication()[pri:0, instance:tests.errorValidationTest@776a6d9b]" started-at="2024-06-27T16:02:26 IST" name="landingApplication" finished-at="2024-06-27T16:02:28 IST" duration-ms="2119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingApplication -->
+        <test-method signature="errorValidation()[pri:0, instance:tests.errorValidationTest@776a6d9b]" started-at="2024-06-27T16:02:28 IST" name="errorValidation" finished-at="2024-06-27T16:02:28 IST" duration-ms="641" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<......> but was:<...or...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<......> but was:<...or...>
+at junit.framework.Assert.assertEquals(Assert.java:81)
+at junit.framework.Assert.assertEquals(Assert.java:87)
+at tests.errorValidationTest.errorValidation(errorValidationTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.errorValidationTest@776a6d9b]" started-at="2024-06-27T16:02:29 IST" name="tearDown" finished-at="2024-06-27T16:02:29 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.errorValidationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
